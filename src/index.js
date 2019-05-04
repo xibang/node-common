@@ -7,7 +7,7 @@ const uuidLib = require('uuid');
  * @param {string} str JSON字符串
  * @return {object} JSON对象
  * @playground
- * const { JSONparse } = require('@dwing/common')
+ * const { JSONparse } = require('@xibang/common')
  * const json = JSONparse('{"status": 1}');
  * console.log(json);
  */
@@ -23,7 +23,7 @@ exports.JSONparse = (str) => {
  * 获取UNIX标准时间戳
  * @return {int} UNIX标准时间戳
  * @playground
- * const { getTimestamp } = require('@dwing/common');
+ * const { getTimestamp } = require('@xibang/common');
  * const timestamp = getTimestamp();
  * console.log(timestamp);
  */
@@ -35,7 +35,7 @@ exports.getTimestamp = () => parseInt(new Date().getTime() / 1000, 10);
  * @param {any} inputDate 输入时间,默认为当前
  * @return {string} 格式化的时间
  * @playground
- * const { formatDate } = require('@dwing/common');
+ * const { formatDate } = require('@xibang/common');
  * const date = formatDate();
  * console.log(date);
  */
@@ -62,7 +62,7 @@ exports.formatDate = (inputPattern, inputDate) => {
  * 生成GUID
  * @return {string} GUID
  * @playground
- * const { uuid } = require('@dwing/common');
+ * const { uuid } = require('@xibang/common');
  * const id = uuid();
  * console.log(id);
  */
@@ -75,7 +75,7 @@ const numberReg = /^((-?\d*\.?\d*(?:e[+-]?\d*(?:\d?\.?|\.?\d?)\d*)?)|(0[0-7]+)|(
  * @param {*} obj 任意
  * @return {boolean} 是否为数字字符串
  * @playground
- * const { isNumberString } = require('@dwing/common');
+ * const { isNumberString } = require('@xibang/common');
  * const check = isNumberString('123');
  * console.log(check);
  */
@@ -105,20 +105,20 @@ exports.isObject = isObject;
  * @param  {*} obj 任意
  * @return {boolean} 真为空，假为非空
  * @playground
- * const { isEmpty } = require('@dwing/common');
+ * const { isEmpty } = require('@xibang/common');
  * const check = isEmpty('123');
  * console.log(check);
  */
 exports.isEmpty = (obj) => {
   if (isObject(obj)) {
     return Object.keys(obj).length === 0 && (obj.length === undefined || obj.length === 0);
-  } else if (isString(obj)) {
+  } if (isString(obj)) {
     return obj.length === 0;
-  } else if (isNumber(obj)) {
+  } if (isNumber(obj)) {
     return obj === 0;
-  } else if (obj === null || obj === undefined) {
+  } if (obj === null || obj === undefined) {
     return true;
-  } else if (isBoolean(obj)) {
+  } if (isBoolean(obj)) {
     return !obj;
   }
   return false;
@@ -139,7 +139,7 @@ const randStr = (x, len) => {
  * @param  {int} len 字符串长度
  * @return {string}
  * @playground
- * const { randStr } = require('@dwing/common');
+ * const { randStr } = require('@xibang/common');
  * const str = randStr(6);
  * console.log(str);
  */
@@ -152,7 +152,7 @@ exports.randStr = (len) => {
  * 随机数字字符串
  * @param  {int} len 字符串长度
  * @return {string}
- * const { randNumberStr } = require('@dwing/common');
+ * const { randNumberStr } = require('@xibang/common');
  * const str = randNumberStr(6);
  * console.log(str);
  */
@@ -167,7 +167,7 @@ exports.randNumberStr = (len) => {
  * @param {int} n n
  * @return {int}  生成 m 到 n 的随机整数
  * @playground
- * const { randNumber } = require('@dwing/common');
+ * const { randNumber } = require('@xibang/common');
  * const result = randNumber(1, 6);
  * console.log(result);
  */
@@ -191,7 +191,7 @@ exports.getDefer = () => {
  * @param  {string} str
  * @return {string}
  * @playground
- * const { md5 } = require('@dwing/common');
+ * const { md5 } = require('@xibang/common');
  * const result = md5('1');
  * console.log(result);
  */
@@ -202,7 +202,7 @@ exports.md5 = str => crypto.createHash('md5').update(`${str}`).digest('hex');
  * @param  {string} str
  * @return {string}
  * @playground
- * const { sha1 } = require('@dwing/common');
+ * const { sha1 } = require('@xibang/common');
  * const result = sha1('1');
  * console.log(result);
  */
@@ -213,7 +213,7 @@ exports.sha1 = str => crypto.createHash('sha1').update(`${str}`).digest('hex');
  * @param  {string} str
  * @return {string}
  * @playground
- * const { sha256 } = require('@dwing/common');
+ * const { sha256 } = require('@xibang/common');
  * const result = sha256('1');
  * console.log(result);
  */
@@ -226,7 +226,7 @@ exports.sha256 = str => crypto.createHash('sha256').update(`${str}`).digest('hex
  * @param  {string} key 密钥
  * @return {string}
  * @playground
- * const { sha256 } = require('@dwing/common');
+ * const { sha256 } = require('@xibang/common');
  * const result = sha256('1');
  * console.log(result);
  */
@@ -237,7 +237,7 @@ exports.hmac = (str, type = 'sha1', key = '') => crypto.createHmac(type, key).up
  * @param {str} ip IP地址，如1.2.3.4
  * @returns {number} IP数值
  * @playground
- * const { ip2int } = require('@dwing/common');
+ * const { ip2int } = require('@xibang/common');
  * const result = ip2int('1.2.3.4');
  * console.log(result);
  */
@@ -254,7 +254,7 @@ exports.ip2int = (ips) => {
  * @param {int} num IP数值
  * @returns {string} IP地址，如1.2.3.4
  * @playground
- * const { int2ip } = require('@dwing/common');
+ * const { int2ip } = require('@xibang/common');
  * const result = int2ip(16909060);
  * console.log(result);
  */
@@ -273,9 +273,9 @@ exports.int2ip = (num) => {
  * @param {int} n 数值
  * @param {int} len 补位长度
  * @param {char} char 补位字符，默认：0
- * @returns {string} IP地址，如1.2.3.4
+ * @returns {string} 补位后的字符串
  * @playground
- * const { pad } = require('@dwing/common');
+ * const { pad } = require('@xibang/common');
  * const result = pad(123, 10);
  * console.log(result);
  */
@@ -289,7 +289,7 @@ exports.pad = (n, len, char = '0') => {
  * @param {string} mobile 手机号字符串
  * @return {string} 非手机号返回空字符串,否则返回去掉+86的手机号码
  * @playground
- * const { getMobile } = require('@dwing/common');
+ * const { getMobile } = require('@xibang/common');
  * const result = getMobile('+8613212341234');
  * console.log(result);
  */
@@ -298,49 +298,4 @@ exports.getMobile = (mobile) => {
     return '';
   }
   return mobile.replace(/^\+?86(\d*)/, '$1');
-};
-
-/**
- * validPassword
- * @param  {string} password  输入密码
- * @return {boolean}          isValid
- */
-exports.validPassword = (password) => {
-  if (password.length < 6 || password.length > 18) {
-    return false;
-  }
-  /*
-   * 允许包含大小写、数字、空格、点、下划线、短横线、波浪线、问号、感叹号
-   */
-  // const regx = /^[A-Za-z0-9.-_~!? ]*$/;
-  // if (!regx.test(password)) {
-  //   return false;
-  // }
-  /*
-   * 如 aaaaaa
-   * 如 1234567 abcdef
-   * 如 7654321 fedcba
-   */
-  const n = [1, 1, 1];
-  for (let l = 1; l < password.length; l += 1) {
-    if (password.charAt(l - 1) === password.charAt(l)) {
-      n[0] += 1;
-    } else {
-      n[0] = 1;
-    }
-    if (password.charCodeAt(l - 1) + 1 === password.charCodeAt(l)) {
-      n[1] += 1;
-    } else {
-      n[1] = 1;
-    }
-    if (password.charCodeAt(l - 1) - 1 === password.charCodeAt(l)) {
-      n[2] += 1;
-    } else {
-      n[2] = 1;
-    }
-    if (n[0] > 4 || n[1] > 4 || n[2] > 4) {
-      return false;
-    }
-  }
-  return true;
 };

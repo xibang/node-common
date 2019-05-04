@@ -1,5 +1,6 @@
 const test = require('ava');
-const { JSONparse, getTimestamp, formatDate, isNumberString, isEmpty, randStr, randNumberStr, randNumber, getDefer, md5, sha1, sha256, hmac, ip2int, int2ip, pad, getMobile, validPassword } = require('..');
+const { JSONparse, getTimestamp, formatDate, isNumberString, isEmpty, randStr,
+  randNumberStr, randNumber, getDefer, md5, sha1, sha256, hmac, ip2int, int2ip, pad } = require('..');
 
 test('JSONparse', (t) => {
   t.is(JSON.stringify(JSONparse(null)), JSON.stringify({}));
@@ -78,17 +79,4 @@ test('ip2int', (t) => {
 test('pad', (t) => {
   t.is(pad(1, 10), '0000000001');
   t.is(pad(10, 1), '10');
-});
-
-test('getMobile', (t) => {
-  t.is(getMobile('hello'), '');
-  t.is(getMobile('+8613212341234'), '13212341234');
-});
-
-test('validPassword', (t) => {
-  t.is(validPassword('abc'), false);
-  t.is(validPassword('abc123abc123abc123abc123'), false);
-  t.is(validPassword('scopre@456'), true);
-  t.is(validPassword('aacopre@765a'), true);
-  t.is(validPassword('7654321'), false);
 });

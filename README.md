@@ -1,11 +1,11 @@
-# Dwing Common
+# Xibang Common
 
-[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Follow)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@dwing/common.svg)](https://npmjs.org/package/@dwing/common) [![npm](https://img.shields.io/npm/dt/@dwing/common.svg)](https://npmjs.org/package/@dwing/common) [![codecov](https://codecov.io/gh/AirDwing/node-dwing-common/branch/master/graph/badge.svg)](https://codecov.io/gh/AirDwing/node-dwing-common) [![Travis-CI](https://travis-ci.org/AirDwing/node-dwing-common.svg?branch=master)](https://travis-ci.org/AirDwing/node-dwing-common) [![codebeat badge](https://codebeat.co/badges/49922bb9-ef93-4286-9fd0-3c2f0d595f3c)](https://codebeat.co/projects/github-com-airdwing-node-dwing-common-master) [![API Doc](https://doclets.io/AirDwing/node-dwing-common/master.svg)](https://doclets.io/AirDwing/node-dwing-common/master)
+[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Followers)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@xibang/common.svg)](https://npmjs.org/package/@xibang/common) [![npm](https://img.shields.io/npm/dt/@xibang/common.svg)](https://npmjs.org/package/@xibang/common) [![codecov](https://codecov.io/gh/Airxibang/node-xibang-common/branch/master/graph/badge.svg)](https://codecov.io/gh/Airxibang/node-xibang-common) [![Travis-CI](https://travis-ci.org/Airxibang/node-xibang-common.svg?branch=master)](https://travis-ci.org/Airxibang/node-xibang-common) [![codebeat badge](https://codebeat.co/badges/49922bb9-ef93-4286-9fd0-3c2f0d595f3c)](https://codebeat.co/projects/github-com-airxibang-node-xibang-common-master) [![API Doc](https://doclets.io/Airxibang/node-xibang-common/master.svg)](https://doclets.io/Airxibang/node-xibang-common/master)
 
 ## 安装
 
 ```
-npm install @dwing/common --save
+npm install @xibang/common --save
 ```
 
 ## 使用
@@ -13,7 +13,7 @@ npm install @dwing/common --save
 ES7:
 
 ```js
-const {md5} = require('@dwing/common');
+const { md5 } = require('@xibang/common');
 
 console.log(md5('1'));
 ```
@@ -938,7 +938,7 @@ Pad Numbers
 
 <div class="param-desc">
 
-IP地址，如1.2.3.4
+补位后的字符串
 
 </div>
 
@@ -1100,7 +1100,7 @@ n
 
 <div class="param-desc">
 
-const { randNumberStr } = require('@dwing/common'); const str = randNumberStr(6); console.log(str);
+const { randNumberStr } = require('@xibang/common'); const str = randNumberStr(6); console.log(str);
 
 </div>
 
@@ -1308,83 +1308,9 @@ SHA256
 
 </dl>
 
-#### <span class="type-signature"></span>validPassword<span class="signature">(password)</span> <span class="type-signature">→ {boolean}</span>
-
-<div class="description">
-
-validPassword
-
-</div>
-
-##### Parameters:
-
-<table class="params">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Type</th>
-
-<th class="last">Description</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td class="name">`password`</td>
-
-<td class="type"><span class="param-type">string</span></td>
-
-<td class="description last">
-
-输入密码
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<dl class="details">
-
-<dt class="tag-source">Source:</dt>
-
-<dd class="tag-source">
-
-*   [index.js](index.js.html), [line 308](index.js.html#line308)
-
-</dd>
-
-</dl>
-
-##### Returns:
-
-<div class="param-desc">
-
-isValid
-
-</div>
-
-<dl>
-
-<dt>Type</dt>
-
-<dd><span class="param-type">boolean</span></dd>
-
-</dl>
-
 ## License
 
-MIT
+Apache 2.0
 
 通过支付宝捐赠：
 
