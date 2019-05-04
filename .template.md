@@ -1,6 +1,6 @@
 # Xibang Common
 
-[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Followers)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common) [![npm](https://img.shields.io/npm/dt/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common)
+[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Followers)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common) [![npm](https://img.shields.io/npm/dt/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common) [![codebeat badge](https://codebeat.co/badges/2fc9ce50-a4ff-418c-84eb-b159ac64b5b4)](https://codebeat.co/projects/github-com-xibang-node-common-master)
 
 ## 安装
 
