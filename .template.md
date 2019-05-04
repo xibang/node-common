@@ -1,11 +1,11 @@
 # Xibang Common
 
-[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Followers)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@xibang/common.svg)](https://npmjs.org/package/@xibang/common) [![npm](https://img.shields.io/npm/dt/@xibang/common.svg)](https://npmjs.org/package/@xibang/common) [![codecov](https://codecov.io/gh/Airxibang/node-xibang-common/branch/master/graph/badge.svg)](https://codecov.io/gh/Airxibang/node-xibang-common) [![Travis-CI](https://travis-ci.org/Airxibang/node-xibang-common.svg?branch=master)](https://travis-ci.org/Airxibang/node-xibang-common) [![codebeat badge](https://codebeat.co/badges/49922bb9-ef93-4286-9fd0-3c2f0d595f3c)](https://codebeat.co/projects/github-com-airxibang-node-xibang-common-master) [![API Doc](https://doclets.io/Airxibang/node-xibang-common/master.svg)](https://doclets.io/Airxibang/node-xibang-common/master)
+[![github](https://img.shields.io/github/followers/willin.svg?style=social&label=Followers)](https://github.com/willin) [![npm](https://img.shields.io/npm/v/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common) [![npm](https://img.shields.io/npm/dt/@xibang/node-common.svg)](https://npmjs.org/package/@xibang/node-common)
 
 ## 安装
 
 ```
-npm install @xibang/common --save
+npm install @xibang/node-common --save
 ```
 
 ## 使用
@@ -13,7 +13,7 @@ npm install @xibang/common --save
 ES7:
 
 ```js
-const { md5 } = require('@xibang/common');
+const { md5 } = require('@xibang/node-common');
 
 console.log(md5('1'));
 ```
