@@ -6,6 +6,7 @@ test('JSONparse', (t) => {
   t.is(JSON.stringify(JSONparse(null)), JSON.stringify({}));
   t.is(JSON.stringify(JSONparse('}}')), JSON.stringify({}));
   t.is(JSON.stringify(JSONparse('{"status":1}')), JSON.stringify({ status: 1 }));
+  t.is(JSON.stringify(JSONparse('}}',[])), JSON.stringify([]]));
 });
 
 test('getTimestamp', (t) => {

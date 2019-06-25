@@ -5,18 +5,19 @@ const uuidLib = require('uuid');
 /**
  * 安全处理 JSON
  * @param {string} str JSON字符串
+ * @param {object} default 默认值 {}
  * @return {object} JSON对象
  * @playground
  * const { JSONparse } = require('@xibang/common')
  * const json = JSONparse('{"status": 1}');
  * console.log(json);
  */
-exports.JSONparse = (str) => {
+exports.JSONparse = (str, d = {}) => {
   if (str === null) return {};
   try {
     return JSON.parse(str);
   } catch (e) {
-    return {};
+    return d;
   }
 };
 /**
@@ -230,7 +231,7 @@ exports.sha256 = str => crypto.createHash('sha256').update(`${str}`).digest('hex
  * const result = sha256('1');
  * console.log(result);
  */
-exports.hmac = (str, type = 'sha1', key = '') => crypto.createHmac(type, key).update(new Buffer(str, 'utf8')).digest('base64');
+exports.hmac = (str, type = 'sha1', key = '') => crypto.createHmac(type, key).update(Buffer.from(str, 'utf8')).digest('base64');
 
 /**
  * IP2INT

@@ -36,7 +36,7 @@ console.log(md5('1'));
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 94](index.js.html#line94)
+*   [index.js](index.js.html), [line 95](index.js.html#line95)
 
 </dd>
 
@@ -56,7 +56,7 @@ console.log(md5('1'));
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 101](index.js.html#line101)
+*   [index.js](index.js.html), [line 102](index.js.html#line102)
 
 </dd>
 
@@ -76,7 +76,7 @@ console.log(md5('1'));
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 69](index.js.html#line69)
+*   [index.js](index.js.html), [line 70](index.js.html#line70)
 
 </dd>
 
@@ -150,7 +150,7 @@ console.log(md5('1'));
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 42](index.js.html#line42)
+*   [index.js](index.js.html), [line 43](index.js.html#line43)
 
 </dd>
 
@@ -186,7 +186,7 @@ getDefer
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 180](index.js.html#line180)
+*   [index.js](index.js.html), [line 181](index.js.html#line181)
 
 </dd>
 
@@ -208,80 +208,6 @@ defer对象
 
 </dl>
 
-#### <span class="type-signature"></span>getMobile<span class="signature">(mobile)</span> <span class="type-signature">→ {string}</span>
-
-<div class="description">
-
-获取手机号码
-
-</div>
-
-##### Parameters:
-
-<table class="params">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Type</th>
-
-<th class="last">Description</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td class="name">`mobile`</td>
-
-<td class="type"><span class="param-type">string</span></td>
-
-<td class="description last">
-
-手机号字符串
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<dl class="details">
-
-<dt class="tag-source">Source:</dt>
-
-<dd class="tag-source">
-
-*   [index.js](index.js.html), [line 296](index.js.html#line296)
-
-</dd>
-
-</dl>
-
-##### Returns:
-
-<div class="param-desc">
-
-非手机号返回空字符串,否则返回去掉+86的手机号码
-
-</div>
-
-<dl>
-
-<dt>Type</dt>
-
-<dd><span class="param-type">string</span></dd>
-
-</dl>
-
 #### <span class="type-signature"></span>getTimestamp<span class="signature">()</span> <span class="type-signature">→ {int}</span>
 
 <div class="description">
@@ -296,7 +222,7 @@ defer对象
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 30](index.js.html#line30)
+*   [index.js](index.js.html), [line 31](index.js.html#line31)
 
 </dd>
 
@@ -398,7 +324,7 @@ sha1或sha256
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 233](index.js.html#line233)
+*   [index.js](index.js.html), [line 234](index.js.html#line234)
 
 </dd>
 
@@ -466,7 +392,7 @@ IP数值
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 261](index.js.html#line261)
+*   [index.js](index.js.html), [line 262](index.js.html#line262)
 
 </dd>
 
@@ -540,7 +466,7 @@ IP地址，如1.2.3.4
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 244](index.js.html#line244)
+*   [index.js](index.js.html), [line 245](index.js.html#line245)
 
 </dd>
 
@@ -614,7 +540,7 @@ IP数值
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 112](index.js.html#line112)
+*   [index.js](index.js.html), [line 113](index.js.html#line113)
 
 </dd>
 
@@ -688,7 +614,7 @@ IP数值
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 82](index.js.html#line82)
+*   [index.js](index.js.html), [line 83](index.js.html#line83)
 
 </dd>
 
@@ -710,7 +636,7 @@ IP数值
 
 </dl>
 
-#### <span class="type-signature"></span>JSONparse<span class="signature">(str)</span> <span class="type-signature">→ {object}</span>
+#### <span class="type-signature"></span>JSONparse<span class="signature">(str, default)</span> <span class="type-signature">→ {object}</span>
 
 <div class="description">
 
@@ -752,6 +678,20 @@ JSON字符串
 
 </tr>
 
+<tr>
+
+<td class="name">`default`</td>
+
+<td class="type"><span class="param-type">object</span></td>
+
+<td class="description last">
+
+默认值 {}
+
+</td>
+
+</tr>
+
 </tbody>
 
 </table>
@@ -762,7 +702,7 @@ JSON字符串
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 14](index.js.html#line14)
+*   [index.js](index.js.html), [line 15](index.js.html#line15)
 
 </dd>
 
@@ -832,7 +772,7 @@ MD5
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 198](index.js.html#line198)
+*   [index.js](index.js.html), [line 199](index.js.html#line199)
 
 </dd>
 
@@ -928,7 +868,7 @@ Pad Numbers
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 282](index.js.html#line282)
+*   [index.js](index.js.html), [line 283](index.js.html#line283)
 
 </dd>
 
@@ -1016,7 +956,7 @@ n
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 174](index.js.html#line174)
+*   [index.js](index.js.html), [line 175](index.js.html#line175)
 
 </dd>
 
@@ -1090,7 +1030,7 @@ n
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 159](index.js.html#line159)
+*   [index.js](index.js.html), [line 160](index.js.html#line160)
 
 </dd>
 
@@ -1164,7 +1104,7 @@ const { randNumberStr } = require('@xibang/common'); const str = randNumberStr(6
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 146](index.js.html#line146)
+*   [index.js](index.js.html), [line 147](index.js.html#line147)
 
 </dd>
 
@@ -1228,7 +1168,7 @@ SHA1
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 209](index.js.html#line209)
+*   [index.js](index.js.html), [line 210](index.js.html#line210)
 
 </dd>
 
@@ -1292,7 +1232,7 @@ SHA256
 
 <dd class="tag-source">
 
-*   [index.js](index.js.html), [line 220](index.js.html#line220)
+*   [index.js](index.js.html), [line 221](index.js.html#line221)
 
 </dd>
 
