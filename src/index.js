@@ -13,7 +13,7 @@ const uuidLib = require('uuid');
  * console.log(json);
  */
 exports.JSONparse = (str, d = {}) => {
-  if (str === null) return {};
+  if (str === null) return d;
   try {
     return JSON.parse(str);
   } catch (e) {
